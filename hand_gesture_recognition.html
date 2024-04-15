@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Gesture Recognition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hand Gesture Recognition</h1>
+  </header>
+
+  <main>
+    <section class="video-container">
+      <video id="video" width="640" height="480" autoplay></video>
+    </section>
+    <section class="gesture-info">
+      <h2>Detected Gesture:</h2>
+      <p id="gesture">-</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Hand Gesture Recognition. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <script src="script.js"></script>
+</body>
+</html>
